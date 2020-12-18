@@ -10,11 +10,13 @@ This project was completed for "Convolutional Neural Networks" course by Courser
 As a Neural Network gets very deep, vanishing / exploding gradients become a huge problem. ResNet solves this by using **“Skip Connections”** where layer 1 output goes directly to layer N input. 
 
 The concept of “Residual Block”:
-<center>
-<img src="images/residualblock.png" style="width:450px;height:250px;"/>
-<font color='blue'> SIGNS dataset (src: Coursera)</font>
-</center>
 
+<center>
+<figure>
+    <img src="images/residualblock.png" style="width:450px;height:250px;"/>
+    <figcaption>SIGNS dataset (src: Coursera)</figcaption>
+</figure>
+</center>
 
 Output of layer l (Al ) gets added to layer l+2 "before" the nonlinear activation is applied at layer l+2.
 
@@ -27,8 +29,10 @@ To build a ResNet, take a plain (regular) CNN and keep adding skip connections a
 The model is trained on SIGNS dataset that contains hand images that represents Digit Signs starting from 0 to 5. A sample image is shown below
 
 <center>
-<img src="images/signs_data_kiank.png" style="width:450px;height:250px;"/>
-<font color='blue'> SIGNS dataset (src: Coursera)</font>
+<figure>
+    <img src="images/signs_data_kiank.png" style="width:450px;height:250px;"/>
+    <figcaption>SIGNS dataset (src: Coursera)</figcaption>
+</figure>
 </center>
 
 # References
